@@ -24,9 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install huggingface_hub joblib pandas scikit-learn xgboost dill
 
-    - name: Deploy to Hugging Face Space
-      env:
-        HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      run: |
-        cd model_building
-        python deploy.py
+  # - name: Deploy to Hugging Face Space
+  #   env:
+  #     HF_TOKEN: ${{ secrets.HF_TOKEN }}
+  #   run: |
+  #     cd model_building
+  #     python deploy.py
